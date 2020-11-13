@@ -1,0 +1,149 @@
+/* 
+    Created on : 19/08/2020, 10:45:08 AM
+    Author     : andre
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none !important;
+    outline-width: 0 !important;
+}
+
+.navegacion{
+    position: fixed;
+    width:50px;
+    height: 100%;
+    background: #102027;
+    transition: 0.6s;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.navegacion:hover,
+.navegacion.active{
+    width: 200px;
+    z-index: 99;
+}
+
+.navegacion ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navegacion ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.navegacion ul li:hover{
+    border-bottom: 1px solid white;
+    transition: 0.5s all;
+}
+
+.navegacion ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacion ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 20px;
+    height: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.fa{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.navegacion ul li a .title{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.contenido{
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-left: 6%;
+}
+
+
+header{
+    background: #102027;
+}
+
+header img{
+    margin: -10px;
+    width: 130px;
+    margin-left: 4px;
+}
+
+.contenedor{
+    margin-left: 65px;    
+    margin-top: 5px;
+}
+
+h2{
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 0 0 4px #338DFF;
+}
+form{
+    padding-top: 10px;
+    box-shadow: 0 0 5px #102027;
+    border-radius: 5px;
+}
+.cont-form{
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"]{
+    width: 80%;
+    margin-left: 40px;
+    padding: 5px;
+    outline:none !important;
+    outline-width: 0 !important;
+    border: 1px solid #338DFF;
+    
+    border-radius: 10px;
+}
+label{
+    margin-left: 40px;
+    text-shadow: 0 0 2px #338DFF;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background: #102027;
+    color: white;
+    padding: 10px;
+}
+
+.Actualizar{
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background: #546e7a;
+}
